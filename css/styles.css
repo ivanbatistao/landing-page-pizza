@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(229, 229, 229);
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -14,8 +15,10 @@ footer {
 }
 
 header {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .header-logo,
@@ -51,12 +54,14 @@ nav {
 
 .nav-bar li,
 footer ul li {
+  border-bottom: 1px solid transparent;
   list-style: none;
   margin: 5px;
 }
 
 .nav-bar li a,
 footer ul li a {
+  border-bottom: 1px solid transparent;
   color: rgb(243, 243, 243);
   text-decoration: none;
 }
@@ -73,16 +78,66 @@ main section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 40px;
 }
 
 .card {
-  border: 2px solid red;
-  padding: 50px;
+  border-radius: 5px;
+  height: 350px;
+  margin: 20px;
+  width: 490px;
+}
+
+.card-one p {
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 20px;
+}
+
+.card-one p span {
+  color: rgb(243, 243, 243);
+}
+
+.card-two {
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 150px;
+}
+
+.card-two-main-title {
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-two-content-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.card-two-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-two-items ol {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: -50px;
+}
+
+.card-two-items ol li {
+  margin-top: 5px;
 }
 
 /* footer styles */
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
